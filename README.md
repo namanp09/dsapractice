@@ -120,7 +120,7 @@ Build Command: npm run build
 
 Output Directory: build
 
-After deployment, note the provided URL (e.g., https://your-frontend.vercel.app).
+After deployment, note the provided URL (dsapractice-khaki.vercel.app/).
 
 🔗 Links
 

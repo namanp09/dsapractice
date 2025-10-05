@@ -9,8 +9,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: 'http://localhost:5173', // your Vite frontend origin
-  credentials: true,
+  origin: '*'
 }));
 app.use(express.json());
 

@@ -1,0 +1,12 @@
+/* practice.css */
+.page-container{max-width:1000px;margin:28px auto;padding:0 16px}
+.control-card{background:white;padding:20px;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,40,0.06);margin-bottom:18px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+select,input{padding:10px 12px;border:1px solid #e2e8f0;border-radius:8px}
+button{background:#0b74ff;color:white;padding:10px 16px;border:none;border-radius:8px;cursor:pointer}
+.results .card{background:white;padding:16px;border-radius:10px;margin-bottom:12px;box-shadow:0 4px 12px rgba(16,24,40,0.04)}
+.card-head{display:flex;justify-content:space-between;align-items:center}
+.tag{background:#eef6ff;color:#0b74ff;padding:6px 8px;border-radius:8px;font-size:12px}
+.solution{background:#f7f9fc;padding:12px;border-radius:8px;margin-top:8px;overflow:auto}
+.pill{display:inline-block;background:#f1f5f9;padding:6px 8px;border-radius:999px;margin-right:6px;font-size:12px}
+.signed-out{background:white;padding:20px;border-radius:10px;text-align:center;box-shadow:0 8px 24px rgba(16,24,40,0.06)}

@@ -1,0 +1,9 @@
+/* app.css */
+.app-header{
+    display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:linear-gradient(90deg,#1f6feb,#3aa0ff);color:white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .app-header .brand{font-weight:700;font-size:18px}
+  .nav-right{display:flex;gap:12px;align-items:center}
+  .nav-right a{color:white;padding:6px 10px;border-radius:6px}
+  

@@ -1,0 +1,4 @@
+/* index.css */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family: Inter, Roboto, Arial, sans-serif;background:#f4f6f8;color:#222}
+a{color:inherit;text-decoration:none}

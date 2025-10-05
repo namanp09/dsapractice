@@ -1,4 +1,5 @@
 <img width="2880" height="1710" alt="image" src="https://github.com/user-attachments/assets/0ee667a6-b9d9-4812-941b-730652734abf" />
+<img width="2880" height="1696" alt="image" src="https://github.com/user-attachments/assets/30b5cdf2-f1e3-4b5a-8083-1e800eef8432" />
 
 Smart AI DSA Practice Application
 

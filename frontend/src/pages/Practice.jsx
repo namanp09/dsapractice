@@ -41,7 +41,7 @@ export default function Practice() {
     <div className="page-container">
       <SignedOut>
         <div className="signed-out">
-          <p>Please sign in to request DSA questions.</p>
+          <p>Click to Sign In </p>
           <SignInButton />
         </div>
       </SignedOut>

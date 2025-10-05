@@ -1,3 +1,5 @@
+<img width="2880" height="1710" alt="image" src="https://github.com/user-attachments/assets/0ee667a6-b9d9-4812-941b-730652734abf" />
+
 Smart AI DSA Practice Application
 
 A full-stack MERN application designed to assist users in practicing Data Structures and Algorithms (DSA) problems. The platform leverages AI to provide personalized problem recommendations and solutions.

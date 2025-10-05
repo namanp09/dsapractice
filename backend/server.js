@@ -5,6 +5,7 @@ import cors from 'cors';
 import { connectDB } from './config/db.js';
 import aiRoutes from './routes/ai.js';
 
+
 const app = express();
 connectDB();
 

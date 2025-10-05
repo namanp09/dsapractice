@@ -48,7 +48,7 @@ export default function Practice() {
 
       <SignedIn>
         <div className="control-card">
-          <h2>AI DSA Practice</h2>
+          <h2 >DSA Practice powered by Gemini</h2>
           <div className="controls">
             <select onChange={(e) => setTopic(e.target.value)}>
               <option value="">Select Topic</option>
@@ -70,10 +70,6 @@ export default function Practice() {
               <option value="Java">Java</option>
               <option value="Python">Python</option>
             </select>
-
-
-
-
 
             <input
               type="text"

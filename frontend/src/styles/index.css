@@ -2,3 +2,75 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family: Inter, Roboto, Arial, sans-serif;background:#f4f6f8;color:#222}
 a{color:inherit;text-decoration:none}
+body {
+    background-image: url('../assets/laptop-bg.jpg'); /* Place your image in public/assets */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  .card {
+    background: white;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: black; 
+    max-width: 900px;
+    margin: 3rem auto;
+  }
+  button {
+    background: linear-gradient(90deg, #6366f1, #3b82f6);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    transform: translateY(-2px);
+  }
+  select, input {
+    background: rgba(255, 255, 255, 0.2);
+    /* border: 2px solid rgba(255, 255, 255, 0.4); */
+    /* color: white; */
+    padding: 0.6rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    margin-right: 1rem;
+    outline: none;
+    width: 200px;
+  }
+  
+  select:focus, input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
+  }
+  .card {
+    animation: fadeIn 0.8s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+        
+  

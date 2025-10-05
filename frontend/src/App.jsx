@@ -10,7 +10,7 @@ export default function App() {
       <header className="app-header">
         <div className="brand">DSA Practice AI</div>
         <nav className="nav-right">
-          <Link to="/">Practice</Link>
+          <Link to="/">Hello </Link>
           <SignedOut>
             <SignInButton />
           </SignedOut>

@@ -66,32 +66,4 @@ Example output:
     console.error("AI error:", err);
     return res.status(500).json({ error: err.message });
   }
- 
-  
- 
-}
- // 🟡 READ ALL
- export const getAllDSAQuestions = async (req, res) => {
-    res.json({ message: "GET all DSA questions route hit" });
-  };
-  
-  // 🟣 READ ONE
-  export const getDSAQuestionById = async (req, res) => {
-    const { id } = req.params;
-    res.json({ message: `GET one DSA question route hit`, id });
-  };
-  
-  // 🔵 UPDATE
-  export const updateDSAQuestion = async (req, res) => {
-    const { id } = req.params;
-    res.json({ message: `UPDATE DSA question route hit`, id, body: req.body });
-  };
-  
-  // 🔴 DELETE
-  export const deleteDSAQuestion = async (req, res) => {
-    const { id } = req.params;
-    res.json({ message: `DELETE DSA question route hit`, id });
-  };
-  export const createDSAQuestion = async (req, res) => {
-    res.json({ message: "CREATE DSA question route hit", body: req.body });
-  };;
+};

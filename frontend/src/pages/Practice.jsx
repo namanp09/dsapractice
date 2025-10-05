@@ -4,7 +4,6 @@ import axios from "axios";
 import { useAuth, SignedIn, SignedOut, SignInButton } from "@clerk/clerk-react";
 import "../styles/practice.css";
 
-
 export default function Practice() {
   const [topic, setTopic] = useState("");
   const [company, setCompany] = useState("");
@@ -37,6 +36,7 @@ export default function Practice() {
       setLoading(false);
     }
   };
+
   return (
     <div className="page-container">
       <SignedOut>
@@ -64,8 +64,6 @@ export default function Practice() {
               <option value="Sorting">Sorting</option>
               <option value="Sliding Window">Sliding Window</option>
             </select>
-
-          
             
             <select onChange={(e) => setLanguage(e.target.value)}>
               <option value="C++">C++</option>
@@ -82,7 +80,6 @@ export default function Practice() {
             <button onClick={fetchQuestions} disabled={loading}>
               {loading ? "Loading..." : "Get Top 5 Questions"}
             </button>
-
           </div>
         </div>
 

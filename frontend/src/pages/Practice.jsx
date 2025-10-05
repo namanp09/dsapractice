@@ -7,13 +7,14 @@ import "../styles/practice.css";
 export default function Practice() {
   const [topic, setTopic] = useState("");
   const [company, setCompany] = useState("");
+  const [language, setLanguage] = useState("C++");
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const { getToken } = useAuth();
   const API = import.meta.env.VITE_API_BASE || "http://localhost:5000";
 
   const fetchQuestions = async () => {
-    if (!topic || !company) {
+    if (!topic || !company || !language) {
       alert("Select a topic and enter company");
       return;
     }
@@ -22,7 +23,7 @@ export default function Practice() {
       const token = await getToken(); // Clerk getToken
       const res = await axios.post(
         `${API}/api/ai/dsa`,
-        { topic, company },
+        { topic, company, language },
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -56,7 +57,23 @@ export default function Practice() {
               <option value="Dynamic Programming">Dynamic Programming</option>
               <option value="Trees">Trees</option>
               <option value="Strings">Strings</option>
+              <option value="Stack">Stack</option>
+              <option value="Queue">Queue</option>
+              <option value="Binary Search">Binary Search</option>
+              <option value="Link List">Link List</option>
+              <option value="Sorting">Sorting</option>
+              <option value="Sliding Window">Sliding Window</option>
             </select>
+            
+            <select onChange={(e) => setLanguage(e.target.value)}>
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+              <option value="Python">Python</option>
+            </select>
+
+
+
+
 
             <input
               type="text"

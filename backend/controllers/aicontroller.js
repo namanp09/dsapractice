@@ -11,8 +11,8 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 export const getDSAQuestions = async (req, res) => {
   try {
     const userId = req.auth?.userId || null;
-    const { topic, company } = req.body;
-    if (!topic || !company) return res.status(400).json({ error: "topic & company required" });
+    const { topic, company, language } = req.body;
+    if (!topic || !company || !language) return res.status(400).json({ error: "topic & company required" });
 
     // Strong prompt asking for valid JSON only (important)
     const prompt = `
@@ -21,10 +21,13 @@ Each object must have these keys:
 - question: string
 - difficulty: "easy" | "medium" | "hard"
 - tags: array of short strings
-- solution: string (brief algorithm + sample code snippet in python or cpp)
-Return ONLY valid JSON (no explanation, no markdown). Example output:
+- Language: "${language}"
+- solution: string (brief algorithm + sample code snippet in "${language}")
+Return ONLY valid JSON (no explanation, no markdown). 
+The code must be written entirely in ${language} syntax, **not always in Python**.
+Example output:
 [
-  {"question":"...", "difficulty":"medium", "tags":["graphs","bfs"], "solution":"..."},
+  {"question":"...", "difficulty":"medium", "tags":["graphs","bfs"], "solution":"...", "language" : "${language}"},
   ...
 ]
 `;
